@@ -14,6 +14,5 @@ question = st.text_area("소감", placeholder="여기에 소감을 작성해 주
 st.markdown("---")
 
 if st.button("확인"):
-        st.success(f"성공적으로 전송되었습니다! ({user_id}님)")
-        st.markdown(f"""
-       {user_id}/{grade}/{ban}/{난의도}
+        st.success(f"{user_id}/{grade}/{ban}/{난의도}")
+     
