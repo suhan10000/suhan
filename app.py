@@ -5,10 +5,11 @@ st.markdown("---")
 st.markdown("## 질문을 하시면 AI 친구가 응답합니다.")
 st.header("1. 기본 정보 입력")
 user_id = st.text_input("이름")
-age = st.number_input("학년", min_value=1, max_value=3, value=1)
+ai_model = st.radio("학년", ["1", "2", "3"], horizontal=True)
+age = st.number_input("반", min_value=1, max_value=10, value=1)
 
-creativity = st.slider("난이도", 0, 100, 50)
-ai_speed = st.select_slider("점수",options=["매우 느림", "느림", "보통", "빠름", "실시간"],value="보통")
+creativity = st.slider("난이도", options=["쉬움", "보통", "어려움"],value="보통")
+ai_speed = st.select_slider("점수",options=["0", "10", "20", "30", "40", "50", "60", "70", "80", "90", "100",],value="50")
 
 question = st.text_area("소감", placeholder="여기에 소감을 작성해 주세요.")
 
