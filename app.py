@@ -1,7 +1,7 @@
 import streamlit as st
 
-st.markdown("# AI 챗봇 만들기")
-st.markdown("---")
+st.markdown("# 앱 UI 만들기")
+st.markdown("-1--")
 st.markdown("## 질문을 하시면 AI 친구가 응답합니다.")
 st.header("1. 기본 정보 입력")
 user_id = st.text_input("아이디(ID)를 입력하세요", placeholder="example_user")
