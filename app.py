@@ -4,12 +4,14 @@ st.markdown("# 앱 UI 만들기")
 st.markdown("---")
 st.markdown("## 질문을 하시면 AI 친구가 응답합니다.")
 st.header("1. 기본 정보 입력")
-user_id = st.text_input("학번")
+user_id = st.text_input("이름")
 age = st.number_input("학년", min_value=1, max_value=3, value=1)
 
 creativity = st.slider("난이도", 0, 100, 50)
 ai_speed = st.select_slider("점수",options=["매우 느림", "느림", "보통", "빠름", "실시간"],value="보통")
-agree = st.checkbox("개인정보 수집 및 AI 학습 이용에 동의합니다.")
+
+question = st.text_area("소감", placeholder="여기에 소감을 작성해 주세요.")
+
 st.markdown("---")
 
 if st.button("질문 전송하기"):
