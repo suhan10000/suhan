@@ -7,7 +7,7 @@ ai_model = st.radio("학년", ["1", "2", "3"], horizontal=True)
 age = st.number_input("반", min_value=1, max_value=10, value=1)
 
 st.select_slider("난이도", options=["쉬움", "보통", "어려움"],value="보통")
-st.slider("점수")
+st.slider("점수",value="50")
 
 question = st.text_area("소감", placeholder="여기에 소감을 작성해 주세요.")
 
