@@ -1,6 +1,6 @@
 import streamlit as st
 
-st.markdown("# 승우")
+st.markdown("# swoo is so s")
 st.markdown("---")
 st.markdown("## 질문을 하시면 AI 친구가 응답합니다.")
 st.header("1. 기본 정보 입력")
